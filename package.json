@@ -1,0 +1,29 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "CRUD with javascript, nodejs, and mysql 8. List of tasks with javascript, where we can add tasks, visualize them in a table, edit the tasks and delete them. It is a simple application where we can learn the basic concepts to make more complex applications with javascript.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.2",
+    "express-myconnection": "^1.0.4",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cornegramm/CRUDNodejsMySql.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cornegramm/CRUDNodejsMySql/issues"
+  },
+  "homepage": "https://github.com/cornegramm/CRUDNodejsMySql#readme"
+}
