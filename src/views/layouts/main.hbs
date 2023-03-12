@@ -6,6 +6,8 @@
 
     <title>Login Encriptado con MD5</title> 
 
+    <!-- Aqui se crea el menu de arriba -->
+
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css">
     <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
@@ -19,6 +21,10 @@
 
       
       <ul class="w-1/2 px-16 ml-auto flex justify-end pt-1">
+
+      <!-- En caso de que session haya almacenado un nombre, esto significa que se ha realizado un login
+      por lo que se muestra el nombre del usuario y se crea un boton rojo con el texto logout -->
+
         {{#if name}}
         <li class="nav-item px-4">
           <p class="font-semibold">{{name}}</p>
@@ -29,6 +35,9 @@
            py-3 px-4 rounded-md">Logout</a>
         </li>  
         {{else}}
+
+        <!-- Se crean los botones registrar y login que aparecen en todas las ventanas -->
+
           <li class="nav-item px-4">
           <a href="/login" class="nav-link font-semibold hover:bg-green-700 py-3 px-4
           rounded-md">Login</a>
